@@ -97,14 +97,14 @@ h3 {
     border: 1px solid #000;
     border-radius: 15px; /* This creates the rounded corners */
     color: white;
-    padding: 20px;
+    margin: 5px;
   }
 
   .project-content{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    margin: 20px;
   }
 
   .hobbies-content{
