@@ -122,7 +122,7 @@ h3 {
     padding: 20px;
   }
 
-  .first-row-hobbies{
+  .first-row{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -279,5 +279,7 @@ h3 {
   border: 1px solid black;
 }
 
-
-
+.roadmap-pic{
+  width: 400px;
+  height: 500px;
+}
