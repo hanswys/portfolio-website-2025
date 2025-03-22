@@ -76,7 +76,7 @@ h3 {
 
   a{
     text-decoration: none;
-    
+    color: black;
   }
 
   .background-content{
@@ -86,7 +86,7 @@ h3 {
 
   .first{
     display: flex;
-    align-items: space-between;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     padding: 10px 20px;
@@ -295,4 +295,8 @@ justify-content: space-evenly;
 
 .hobby-middle{
   text-align: center;
+}
+
+p{
+  font-size: large;
 }
