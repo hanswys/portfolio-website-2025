@@ -292,3 +292,7 @@ justify-content: space-evenly;
   height: 20px;
   border: 1px black solid;
 }
+
+.hobby-middle{
+  text-align: center;
+}
