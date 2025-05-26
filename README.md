@@ -1,1 +1,0 @@
-Redo Hobbies to be videos and pictures 

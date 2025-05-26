@@ -97,9 +97,25 @@ h3 {
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 40px; /* Increased gap to ensure proper spacing between rows */
     padding: 20px;
 }
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: auto; /* Allow the container to adjust based on content */
+    margin-bottom: 20px; /* Add spacing below each container */
+}
+
 .hobbies-content {
   display: flex;
   flex-direction: column;
@@ -248,20 +264,6 @@ h3 {
   
 }
 
-.project-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  height: 100%; /* Ensures all containers are the same height */
-}
-
 .project-pic {
   width: 100%;
   max-width: 300px; /* Ensures consistent width */
@@ -289,20 +291,32 @@ h3 {
 
 .rounded-box {
   width: 300px;
-  height: 200px;
   border: 2px solid #000;
   margin: 5px;
   overflow: hidden; /* Ensures content stays within the box */
   border-radius: 15px; /* Creates rounded corners */
+  display: flex;
+  flex-direction: column; /* Stacks the media and title vertically */
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff; /* Optional: Adds a background color */
 }
 
 .rounded-box img,
 .rounded-box video {
   width: 100%;
-  height: 100%;
+  height: 200px; /* Ensures consistent height for media */
   object-fit: cover; /* Ensures media scales properly */
-  display: block; /* Removes any extra space below the media */
-  border-radius: 15px; /* Matches the rounded corners of the container */
+  border-radius: 15px 15px 0 0; /* Matches the rounded corners at the top */
+}
+
+.box-title {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 5px 0; /* Adds spacing around the text */
 }
 
 .hobbies-content {
@@ -380,4 +394,23 @@ h3 {
   display: block; /* Ensures proper alignment */
   margin-left: auto; /* Centers the image horizontally */
   margin-right: auto; /* Centers the image horizontally */
+}
+
+.project-tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag {
+  background-color: #007BFF;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
 }
