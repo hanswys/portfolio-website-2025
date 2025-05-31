@@ -179,41 +179,26 @@ h3 {
   margin: 40px 0;
   padding: 20px;
 }
-
 .milestone-container {
-    display: flex;
+  display: flex;
+  flex-direction: column; /* Stack milestones vertically */
+  gap: 40px; /* Add spacing between milestones */
+  position: relative;
 }
 
 .milestone {
-    display: flex;
-    width: 100%;
-    margin-bottom: 30px;
-    opacity: 1;
-    transition: var(--transition);
-}
-
-
-.milestone-content {
-  border-radius: 10px;
-  padding: 20px;
-  width: 45%;
-  border: 1px solid black;
-}
-
-.milestone-content-potential {
-  border-radius: 10px;
-  padding: 20px;
-  width: 45%;
-  border: 1px solid black;
-  border-style: dashed;
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px; /* Add spacing below each milestone */
+  position: relative; /* Ensure proper positioning */
 }
 
 .milestone.left {
-  justify-content: flex-start;
+  justify-content: flex-start; /* Align milestones to the left */
 }
 
 .milestone.right {
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align milestones to the right */
 }
 
 .milestone-dot {
@@ -225,8 +210,21 @@ h3 {
   border-radius: 50%;
   z-index: 3;
   border: 1px solid black;
+  background-color: white; /* Optional: Add a background color */
 }
 
+.milestone-content,
+.milestone-content-potential {
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  border: 1px solid black;
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+.milestone-content-potential {
+  border-style: dashed; /* Dashed border for potential milestones */
+}
 
 .milestone-header {
   display: flex;
@@ -237,7 +235,6 @@ h3 {
 
 .milestone-title {
   font-size: 1.2rem;
-  color: var(--primary-color);
   margin-bottom: 5px;
 }
 
@@ -245,7 +242,6 @@ h3 {
   color: #888;
   font-size: 0.9rem;
 }
-
 
 .milestone-category {
   display: inline-block;
@@ -273,12 +269,26 @@ h3 {
   margin-bottom: 15px;
 }
 
-.project-buttons {
-  flex: 1; /* Ensures the description takes up remaining space */
+.project-links {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.project-button {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #0056b3;
 }
 
 .project-buttons p {
